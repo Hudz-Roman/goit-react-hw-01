@@ -1,6 +1,9 @@
+import clsx from 'clsx';
+import s from './TransactionHistory.module.css';
+
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className={clsx(s.table, 'container')}>
       <thead>
         <tr>
           <th>Type</th>
@@ -11,7 +14,7 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
           <tr key={id}>
-            <td>{type}</td>
+            <td className={s.type}>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
           </tr>

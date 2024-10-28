@@ -1,0 +1,27 @@
+/* FriendList CSS */
+
+.fr_cards {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+
+/* FriendListItem CSS */
+
+.fr_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
